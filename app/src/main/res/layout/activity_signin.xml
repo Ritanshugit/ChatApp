@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="35dp"
+    tools:context=".Signin">
+
+    <ImageView
+        android:id="@+id/lgn_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/chat"
+        android:layout_centerHorizontal="true">
+    </ImageView>
+
+    <EditText
+        android:id="@+id/lgn_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lgn_img"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#000000"
+        android:fontFamily="sans-serif"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:textColor="#009688"
+        android:textColorHint="#00BCD4"
+        android:textSize="16dp">
+    </EditText>
+
+    <EditText
+        android:id="@+id/lgn_psd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lgn_email"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="#000000"
+        android:fontFamily="sans-serif"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColor="#009688"
+        android:textColorHint="#00BCD4"
+        android:textSize="16dp"></EditText>
+
+    <TextView
+        android:id="@+id/lgn_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lgn_psd"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:text="No account? Sign Up"
+        android:textColor="@color/teal_700"></TextView>
+
+    <Button
+        android:id="@+id/lgn_btn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lgn_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:background="#8BC34A"
+        android:text="Sign In"
+        android:textColor="#FFFFFF"
+        android:textSize="19dp"></Button>
+
+    <ProgressBar
+        android:id="@+id/lgn_pbar"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/lgn_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:indeterminate="true"
+        android:indeterminateTintMode="src_atop"
+        android:indeterminateTint="#009688"
+        android:visibility="invisible">
+    </ProgressBar>
+
+</RelativeLayout>

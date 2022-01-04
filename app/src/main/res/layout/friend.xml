@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="left"
+        android:padding="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/frnd_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/user">
+        </de.hdodenhof.circleimageview.CircleImageView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="9dp">
+
+            <TextView
+                android:id="@+id/frnd_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ritanshu Yadav"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif"
+                android:textColor="#03A9F4">
+            </TextView>
+            <TextView
+                android:id="@+id/frnd_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ritanshuyadav74@gmail.com"
+                android:fontFamily="sans-serif"
+                android:textSize="15sp"
+                android:textColor="#FF7700">
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
