@@ -19,12 +19,14 @@
             android:layout_height="match_parent"
             android:background="@drawable/user">
         </de.hdodenhof.circleimageview.CircleImageView>
+
         <ImageView
-            android:layout_width="50dp"
-            android:layout_height="40dp"
-            android:src="@android:drawable/ic_menu_camera"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true">
+            android:src="@android:drawable/ic_menu_camera"
+            android:background="#FFEB3B">
         </ImageView>
     </RelativeLayout>
 

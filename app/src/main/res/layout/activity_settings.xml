@@ -20,12 +20,14 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/user"></de.hdodenhof.circleimageview.CircleImageView>
+
         <ImageView
             android:layout_width="60dp"
             android:layout_height="50dp"
-            android:src="@android:drawable/ic_menu_camera"
+            android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true">
+            android:src="@android:drawable/ic_menu_camera"
+            android:background="#FFEB3B">
         </ImageView>
     </RelativeLayout>
 
@@ -50,10 +52,12 @@
         android:layout_below="@+id/settings_name"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="28dp"
-        android:background="#4CAF50"
+        android:background="#00BCD4"
         android:text="Update"
         android:textColor="#ffffff"
-        android:textSize="19dp"></Button>
+        android:textSize="19dp"
+        android:elevation="5dp">
+    </Button>
 
     <ProgressBar
         android:id="@+id/settings_pbar"
@@ -63,9 +67,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
         android:indeterminate="true"
-        android:indeterminateTintMode="src_atop"
         android:indeterminateTint="#2196F3"
-        android:visibility="invisible">
-    </ProgressBar>
+        android:indeterminateTintMode="src_atop"
+        android:visibility="invisible"></ProgressBar>
 
 </RelativeLayout>
